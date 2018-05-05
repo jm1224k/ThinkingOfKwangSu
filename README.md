@@ -1,4 +1,4 @@
-# ThinkingOfKwangSu
+# 光手생각
 
 단기 프로젝트 : 공학용 계산기
 
