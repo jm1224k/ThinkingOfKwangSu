@@ -9,27 +9,35 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-//    Button add, subtract, multiply, divide, one, two, three, four, five, six, seven, eight, nine, zero, zero_2, equal;
-//    TextView result;
+
+    private Button shift, up, down, right, left, backspace, squre, root, left_bracket, right_bracket, previouse_answer, constant, add, subtract, multiply,
+            divide, one, two, three, four, five, six, seven, eight, nine, zero, point, equal;
+    private TextView current, result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+}
 
-    //    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+//        shift = (Button) findViewById(R.id.shift);
+//        up = (Button) findViewById(R.id.up);
+//        down = (Button) findViewById(R.id.down);
+//        right = (Button) findViewById(R.id.right);
+//        left = (Button) findViewById(R.id.left);
+//        backspace = (Button) findViewById(R.id.backspace);
+//        constant =  (Button) findViewById(R.id.constant);
 //
 //        add = (Button) findViewById(R.id.add);
-//        subtract = (Button)findViewById(R.id.subtract);
-//        multiply = (Button)findViewById(R.id.multiply);
-//        divide = (Button)findViewById(R.id.divide);
-//        equal = findViewById(R.id.equal);
+//        subtract = (Button) findViewById(R.id.subtract);
+//        multiply = (Button) findViewById(R.id.multiply);
+//        divide = (Button) findViewById(R.id.divide);
+//        squre = (Button) findViewById(R.id.square);
+//        root = (Button) findViewById(R.id.root);
+//        equal = (Button) findViewById(R.id.equal);
 //
-//        result = findViewById(R.id.result);
+//        previouse_answer = (Button) findViewById(R.id.previous_answer);
 //
 //        one = findViewById(R.id.one);
 //        two = findViewById(R.id.two);
@@ -41,38 +49,38 @@ public class MainActivity extends AppCompatActivity {
 //        eight = findViewById(R.id.eight);
 //        nine = findViewById(R.id.nine);
 //        zero = findViewById(R.id.zero);
-//        zero_2 = findViewById(R.id.zero_2);
+//        point = (Button) findViewById(R.id.point);
+//        left_bracket = (Button) findViewById(R.id.left_bracket);
+//        right_bracket = (Button) findViewById(R.id.right_bracket);
 //
+//        result =  findViewById(R.id.result);
 //
 //        View.OnClickListener numberButton = new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                switch(v.getId()){
-//                    case R.id.one: result.setText("1");
+//                    case R.id.one: current.setText("1");
 //                        break;
-//                    case R.id.two: result.setText("2");
+//                    case R.id.two: current.setText("2");
 //                        break;
-//                    case R.id.three: result.setText("3");
+//                    case R.id.three: current.setText("3");
 //                        break;
-//                    case R.id.four: result.setText("4");
+//                    case R.id.four: current.setText("4");
 //                        break;
-//                    case R.id.five: result.setText("5");
+//                    case R.id.five: current.setText("5");
 //                        break;
-//                    case R.id.six: result.setText("6");
+//                    case R.id.six: current.setText("6");
 //                        break;
-//                    case R.id.seven: result.setText("7");
+//                    case R.id.seven: current.setText("7");
 //                        break;
-//                    case R.id.eight: result.setText("8");
+//                    case R.id.eight: current.setText("8");
 //                        break;
-//                    case R.id.nine: result.setText("9");
+//                    case R.id.nine: current.setText("9");
 //                        break;
-//                    case R.id.zero: result.setText("0");
-//                        break;
-//                    case R.id.zero_2: result.setText("00");
+//                    case R.id.zero: current.setText("0");
 //                        break;
 //                    default:
 //                        Toast.makeText(getApplicationContext(),"syntax_error",Toast.LENGTH_SHORT).show();
-//
 //                }
 //            }
 //        };
@@ -93,9 +101,4 @@ public class MainActivity extends AppCompatActivity {
 //        eight.setOnClickListener(numberButton);
 //        nine.setOnClickListener(numberButton);
 //        zero.setOnClickListener(numberButton);
-//        zero_2.setOnClickListener(numberButton);
 //    }
-//
-//
-
-}
